@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-
+import { motion } from 'framer-motion'
 const whyChooseCards = [
   {
     num: "01",
@@ -36,7 +36,13 @@ export default function About() {
       <div className="max-w-7xl mx-auto flex flex-col gap-24">
         
         {/* PART 1: ABOUT KYRAV */}
-        <div className="flex flex-col gap-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-12"
+        >
           {/* Tagline */}
           <div className="inline-block">
             <span className="px-4 py-1.5 rounded-full border border-white/20 text-xs font-mono tracking-widest text-zinc-300 uppercase">
@@ -66,7 +72,7 @@ export default function About() {
               
               <div className="mt-4 p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start gap-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white/10 bg-zinc-800">
-                  <img src="/placeholder-avatar.png" alt="Kaviyarasu" className="w-full h-full object-cover" />
+                  <img src="/kaviyarasu.jpg" alt="Kaviyarasu" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col gap-2 text-center sm:text-left">
                   <span className="font-display font-bold text-white text-lg">Kaviyarasu</span>
@@ -106,10 +112,16 @@ export default function About() {
             </div>
 
           </div>
-        </div>
+        </motion.div>
 
         {/* PART 2: WHY YOU CHOOSE KYRAV */}
-        <div className="flex flex-col gap-12 pt-12 border-t border-white/10">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-12 pt-12 border-t border-white/10"
+        >
           
           {/* Tagline */}
           <div className="inline-block">
@@ -143,7 +155,7 @@ export default function About() {
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
               
               {/* Card 01 - Full Width on Right Top */}
-              <div className="md:col-span-2 bg-[#161616] p-8 rounded-2xl border border-white/10 relative overflow-hidden flex flex-col justify-between min-h-[160px]">
+              <div className="md:col-span-2 bg-[#161616] p-8 rounded-2xl border border-white/10 relative overflow-hidden flex flex-col justify-between min-h-[160px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-display font-bold text-xl text-white mb-2">Transparent Process</h4>
@@ -154,7 +166,7 @@ export default function About() {
               </div>
 
               {/* Card 02 */}
-              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px]">
+              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-display font-bold text-xl text-white mb-2">Clean Development</h4>
@@ -165,7 +177,7 @@ export default function About() {
               </div>
 
               {/* Card 03 */}
-              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px]">
+              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-display font-bold text-xl text-white mb-2">Performance First</h4>
@@ -176,7 +188,7 @@ export default function About() {
               </div>
 
               {/* Card 04 */}
-              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px]">
+              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-display font-bold text-xl text-white mb-2">Responsive Experience</h4>
@@ -187,7 +199,7 @@ export default function About() {
               </div>
 
               {/* Card 05 */}
-              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px]">
+              <div className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[160px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-display font-bold text-xl text-white mb-2">Thoughtful Design</h4>
@@ -201,11 +213,17 @@ export default function About() {
 
           </div>
 
-        </div>
+        </motion.div>
 
         {/* PART 3: TRUST STATS */}
-        <div className="flex flex-col gap-6">
-          <div className="bg-[#141414] rounded-2xl p-8 border border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-6"
+        >
+          <div className="bg-[#141414] rounded-2xl p-8 border border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center group hover:border-white/20 transition-all duration-500">
             <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-white/5 pb-6 md:pb-0 md:pr-6">
               <span className="font-display font-extrabold text-3xl text-white">100%</span>
               <span className="text-xs text-zinc-400 font-mono uppercase tracking-wider">Client Retention</span>
@@ -222,7 +240,7 @@ export default function About() {
           <p className="text-center text-sm text-zinc-500 max-w-lg mx-auto italic">
             We take on a handful of projects at a time — not fifty. That's the point.
           </p>
-        </div>
+        </motion.div>
 
       </div>
     </section>

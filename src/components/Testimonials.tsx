@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-
+import { motion } from 'framer-motion'
 const testimonials = [
   {
     id: 1,
@@ -28,7 +28,13 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="w-full bg-[#0d0d0d] text-white py-24 px-4 md:px-12 lg:px-24 border-t border-white/10">
-      <div className="max-w-7xl mx-auto flex flex-col gap-16">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7 }}
+        className="max-w-7xl mx-auto flex flex-col gap-16"
+      >
 
         {/* HEADER */}
         <div className="flex flex-col gap-3 items-center text-center">
@@ -46,7 +52,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[300px] hover:border-white/20 transition-colors"
+              className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[300px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex items-center justify-between">
@@ -101,7 +107,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-      </div>
+      </motion.div>
     </section>
   )
 }

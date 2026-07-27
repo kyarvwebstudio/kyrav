@@ -13,7 +13,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-white/10 bg-zinc-900">
               <img 
-                src="/placeholder-avatar.png" 
+                src="/kaviyarasu.jpg" 
                 alt="Kaviyarasu - Founder of KYRAV" 
                 className="w-full h-full object-cover transition-all duration-700"
               />

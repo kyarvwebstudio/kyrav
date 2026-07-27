@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const faqs = [
   {
@@ -45,7 +46,13 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="w-full bg-[#0d0d0d] text-white py-24 px-4 md:px-12 lg:px-24">
-      <div className="max-w-5xl mx-auto flex flex-col gap-16">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7 }}
+        className="max-w-5xl mx-auto flex flex-col gap-16"
+      >
         
         {/* HEADER */}
         <div className="flex flex-col gap-4 items-center text-center">
@@ -87,7 +94,7 @@ export default function FAQ() {
             return (
               <div 
                 key={faq.num}
-                className="bg-[#1a1a1a] border border-white/10 rounded-2xl overflow-hidden transition-colors"
+                className="bg-[#1a1a1a] border border-white/10 rounded-2xl overflow-hidden transition-colors hover:bg-[#222] hover:border-white/20"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -110,7 +117,7 @@ export default function FAQ() {
           })}
         </div>
 
-      </div>
+      </motion.div>
     </section>
   )
 }

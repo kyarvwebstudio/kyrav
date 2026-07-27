@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
+import { motion } from 'framer-motion'
+
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
@@ -45,7 +47,12 @@ export default function Hero() {
       />
 
       {/* Top Banner Tag */}
-      <div className="relative z-10 my-auto flex flex-col items-center text-center gap-8 max-w-5xl mx-auto pt-16">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10 my-auto flex flex-col items-center text-center gap-8 max-w-5xl mx-auto pt-16"
+      >
         
         {/* Availability & Slogan Badge */}
         <div className="flex flex-col items-center gap-4">
@@ -109,7 +116,7 @@ export default function Hero() {
           </div>
         </div>
 
-      </div>
+      </motion.div>
 
       {/* Scroll Down Indicator */}
       <div className="relative z-10 pt-12 pb-4 flex flex-col items-center gap-3">

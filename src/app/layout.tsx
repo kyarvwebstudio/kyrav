@@ -93,6 +93,10 @@ export const metadata: Metadata = {
   },
 };
 
+import AmbientBackground from "@/components/AmbientBackground";
+
+// ... existing code in layout.tsx will be preserved outside of the replaced block
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -172,12 +176,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white selection:bg-white selection:text-black overflow-x-hidden font-sans relative">
         
-        {/* Ambient Background Glows */}
-        <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-blue-500/10 blur-[150px]" />
-          <div className="absolute top-[30%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/10 blur-[150px]" />
-          <div className="absolute bottom-[-20%] left-[10%] w-[60%] h-[60%] rounded-full bg-amber-500/5 blur-[150px]" />
-        </div>
+        <AmbientBackground />
 
         <SmoothScroll>
           <Navbar />

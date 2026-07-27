@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const serviceItems = [
   {
@@ -88,7 +89,13 @@ export default function Services() {
       <div className="max-w-7xl mx-auto flex flex-col gap-24">
         
         {/* SERVICES SECTION HEADER */}
-        <div className="flex flex-col gap-6 items-center text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-6 items-center text-center"
+        >
           <span className="px-4 py-1.5 rounded-full border border-white/20 text-xs font-mono tracking-widest text-zinc-300 uppercase">
             WHAT WE DO
           </span>
@@ -100,10 +107,16 @@ export default function Services() {
           <p className="text-sm text-zinc-400 max-w-xl">
             Design, development, SEO, maintenance, and AI integration. Here's what we actually do.
           </p>
-        </div>
+        </motion.div>
 
         {/* DIGITAL SOLUTIONS HEADLINE & INTERACTIVE EXPANDABLE CARD SLIDER */}
-        <div className="flex flex-col gap-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-10"
+        >
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-3">
             <h3 className="font-display font-extrabold text-3xl md:text-4xl">
               Digital Solutions Crafted for Modern Brands.
@@ -252,10 +265,16 @@ export default function Services() {
             </Link>
           </div>
 
-        </div>
+        </motion.div>
 
         {/* OUR PROCESS SUB-SECTION */}
-        <div className="flex flex-col gap-12 pt-12 border-t border-white/10">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col gap-12 pt-12 border-t border-white/10"
+        >
           
           <div className="flex flex-col gap-3 items-center text-center">
             <h3 className="font-display font-extrabold text-4xl text-white uppercase tracking-wider">
@@ -276,7 +295,7 @@ export default function Services() {
             {processSteps.map((step) => (
               <div 
                 key={step.num}
-                className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[220px]"
+                className="bg-[#161616] p-8 rounded-2xl border border-white/10 flex flex-col justify-between min-h-[220px] group hover:border-white/25 hover:bg-[#1a1a1a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
               >
                 <div className="flex justify-between items-start mb-6">
                   <span className="font-display font-extrabold text-3xl text-white">{step.num}</span>
@@ -291,7 +310,7 @@ export default function Services() {
             ))}
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
     </section>
