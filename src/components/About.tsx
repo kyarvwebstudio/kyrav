@@ -63,6 +63,19 @@ export default function About() {
               <p className="text-sm md:text-base text-zinc-300 leading-relaxed">
                 We work with startups who need their first serious website, creative professionals who've outgrown their old one, and businesses ready to stop losing customers to a bad online presence.
               </p>
+              
+              <div className="mt-4 p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white/10 bg-zinc-800">
+                  <img src="/placeholder-avatar.png" alt="Kaviyarasu" className="w-full h-full object-cover" />
+                </div>
+                <div className="flex flex-col gap-2 text-center sm:text-left">
+                  <span className="font-display font-bold text-white text-lg">Kaviyarasu</span>
+                  <span className="text-xs text-zinc-400 font-mono">FOUNDER, KYRAV</span>
+                  <p className="text-xs text-zinc-300 leading-relaxed mt-1">
+                    Based in Tamil Nadu, India, working across timezones with clients in the US, UK, and UAE. I personally oversee the design and development of every project to ensure we never deliver just another template.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Right Column Image & Overlay Tags */}
@@ -190,24 +203,25 @@ export default function About() {
 
         </div>
 
-        {/* PART 3: STATS STRIP (Updated to reflect 2 projects) */}
-        <div className="bg-[#141414] rounded-2xl p-8 border border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="flex flex-col gap-1">
-            <span className="font-display font-extrabold text-4xl text-white">2+</span>
-            <span className="text-xs text-zinc-400">Project completed</span>
+        {/* PART 3: TRUST STATS */}
+        <div className="flex flex-col gap-6">
+          <div className="bg-[#141414] rounded-2xl p-8 border border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-white/5 pb-6 md:pb-0 md:pr-6">
+              <span className="font-display font-extrabold text-3xl text-white">100%</span>
+              <span className="text-xs text-zinc-400 font-mono uppercase tracking-wider">Client Retention</span>
+            </div>
+            <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-white/5 pb-6 md:pb-0 md:pr-6">
+              <span className="font-display font-extrabold text-3xl text-white">Hand-Picked</span>
+              <span className="text-xs text-zinc-400 font-mono uppercase tracking-wider">Every Project</span>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="font-display font-extrabold text-3xl text-white">Direct Access</span>
+              <span className="text-xs text-zinc-400 font-mono uppercase tracking-wider">No Account Managers</span>
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
-            <span className="font-display font-extrabold text-4xl text-white">100%</span>
-            <span className="text-xs text-zinc-400">Responsive website</span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="font-display font-extrabold text-4xl text-white">Fast</span>
-            <span className="text-xs text-zinc-400">Performance focused</span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="font-display font-extrabold text-4xl text-white">Quality</span>
-            <span className="text-xs text-zinc-400">Crafted with care</span>
-          </div>
+          <p className="text-center text-sm text-zinc-500 max-w-lg mx-auto italic">
+            We take on a handful of projects at a time — not fifty. That's the point.
+          </p>
         </div>
 
       </div>

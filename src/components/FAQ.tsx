@@ -20,16 +20,21 @@ const faqs = [
   },
   {
     num: "04.",
+    q: "Will working across timezones be an issue?",
+    a: "Not at all. Based in India (IST), our schedule overlaps perfectly with UK mornings and US evenings. We typically reply within 2-4 hours and use email, WhatsApp, and scheduled video calls to keep everything running smoothly."
+  },
+  {
+    num: "05.",
     q: "Which technologies do you use?",
     a: "Next.js, React, Tailwind CSS, and Vercel for hosting. We design in Figma. No WordPress, no page builders, no bloated templates — just clean, hand-written code."
   },
   {
-    num: "05.",
+    num: "06.",
     q: "Do you provide support after launch?",
     a: "Of course. We don't just hand over the keys and disappear. Bug fixes, content updates, performance tweaks — we're around when you need us."
   },
   {
-    num: "06.",
+    num: "07.",
     q: "How do we get started?",
     a: "Drop us a message through the contact form or reach out directly. We'll set up a quick call to understand what you need, and go from there. No obligations."
   }

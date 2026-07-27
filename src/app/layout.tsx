@@ -23,38 +23,11 @@ const caveat = Caveat({
   weight: ["400", "700"],
 });
 
-// Worldwide Top-Level SEO Keywords List (100+ Keywords)
 const seoKeywords = [
-  "web design studio", "web development agency", "custom website design", "website redesign services",
-  "annual website maintenance", "website AMC services", "AI integration agency", "AI chatbot development",
-  "SEO optimization agency", "performance optimization studio", "Lighthouse 100 website development",
-  "UI UX design studio", "full stack web development", "responsive web design", "Next.js development agency",
-  "React web development", "Tailwind CSS design studio", "TypeScript web engineering", "Supabase web developers",
-  "GSAP animation studio", "headless CMS development", "enterprise web applications", "B2B web design agency",
-  "executive portfolio design", "C-suite website development", "industrial growth advisory portfolio",
-  "luxury art studio web design", "hand painted wall mural website", "ceiling art portfolio design",
-  "interior design agency website", "consulting firm web development", "personal brand website builder",
-  "high converting web application", "conversion rate optimization agency", "brand digital strategy",
-  "web design studio India", "web developers Tamil Nadu", "web design agency Chennai", "web development Coimbatore",
-  "web studio Bangalore", "web design agency Mumbai", "web development GCC", "web design studio Dubai",
-  "web design agency UAE", "website development Saudi Arabia", "web studio Qatar", "web design agency UK",
-  "web development London", "web design studio USA", "web design agency New York", "web studio California",
-  "global web design agency", "worldwide freelance web studio", "remote web development studio",
-  "Core Web Vitals optimization", "sub-second page load speed", "JSON-LD schema metadata",
-  "Google Knowledge Graph indexing", "technical SEO agency", "local business schema setup",
-  "PWA progressive web app development", "jamstack web studio", "serverless web applications",
-  "accessible web design WCAG", "dark mode web design", "glassmorphism web studio", "modern typography design",
-  "custom AI workflow automation", "OpenAI integration agency", "Claude AI web integration",
-  "WhatsApp lead capture integration", "Stripe payment web portal", "client portal web development",
-  "real time database streaming", "WebP image pipeline optimization", "semantic HTML5 web studio",
-  "high performance frontend engineering", "digital transformation studio", "startup web development",
-  "best web design agency for small business", "hire Next.js developers worldwide",
-  "affordable website annual maintenance plans", "professional website redesign company",
-  "custom web design studio for executives", "luxury web design studio India",
-  "high speed performance optimized website developers", "AI powered website development agency",
-  "top rated web design studio 2026", "KYRAV web studio", "KYRAV digital experiences",
-  "Where Confidence Meets Creativity", "KYRAV web engineering", "ultra fast nextjs portfolio",
-  "cross border web design studio", "bespoke digital studio", "modern web design agency 2026"
+  "web design studio India", "Next.js development agency", "custom website design", 
+  "website redesign services", "annual website maintenance", "AI integration agency", 
+  "SEO performance optimization", "freelance web studio", "high performance frontend engineering", 
+  "B2B web design agency", "responsive web design", "KYRAV web studio"
 ];
 
 export const metadata: Metadata = {
@@ -63,7 +36,7 @@ export const metadata: Metadata = {
     default: "KYRAV | Where Confidence Meets Creativity — Web Design, Redesign, AI & SEO",
     template: "%s | KYRAV — Where Confidence Meets Creativity"
   },
-  description: "KYRAV is a elite worldwide digital web studio specializing in Website Design, Website Redesign, Annual Maintenance (AMC), AI Integration, and SEO & Performance Optimization. Delivering sub-second speeds and 100/100 Lighthouse metrics.",
+  description: "KYRAV is an independent digital studio in India crafting high-performance websites for founders globally. No templates, just bespoke Next.js development.",
   keywords: seoKeywords,
   authors: [{ name: "KYRAV Web Studio", url: "https://kyrav.in" }],
   creator: "KYRAV Web Studio",
@@ -100,7 +73,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://kyrav.in",
     title: "KYRAV | Where Confidence Meets Creativity — Web Design, Redesign, AI & SEO",
-    description: "Elite worldwide web studio offering Website Design, Redesign, AMC Maintenance, AI Integration, and SEO & Performance Optimization.",
+    description: "KYRAV is an independent digital studio in India crafting high-performance websites for founders globally. No templates, just bespoke Next.js development.",
     siteName: "KYRAV",
     images: [
       {
@@ -114,7 +87,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "KYRAV | Where Confidence Meets Creativity",
-    description: "Elite worldwide web studio offering Website Design, Redesign, AMC Maintenance, AI Integration, and SEO & Performance Optimization.",
+    description: "KYRAV is an independent digital studio in India crafting high-performance websites for founders globally. No templates, just bespoke Next.js development.",
     images: ["/logo.png"],
     creator: "@kyravwebstudio",
   },
@@ -132,7 +105,7 @@ export default function RootLayout({
     "url": "https://kyrav.in",
     "logo": "https://kyrav.in/logo.png",
     "image": "https://kyrav.in/logo.png",
-    "description": "Where Confidence Meets Creativity. Elite worldwide web studio specializing in Website Design, Website Redesign, Annual Maintenance (AMC), AI Integration, and SEO & Performance Optimization.",
+    "description": "KYRAV is an independent digital studio in India crafting high-performance websites for founders globally. No templates, just bespoke Next.js development.",
     "slogan": "Where Confidence Meets Creativity",
     "telephone": "+91-88830-94601",
     "email": "kyravwebstudio@gmail.com",
@@ -141,7 +114,7 @@ export default function RootLayout({
       "addressRegion": "Tamil Nadu",
       "addressCountry": "IN"
     },
-    "areaServed": ["Worldwide", "India", "GCC", "UAE", "USA", "UK", "Europe"],
+    "areaServed": ["India", "UAE", "UK", "USA"],
     "priceRange": "$$$",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

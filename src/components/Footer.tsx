@@ -71,7 +71,7 @@ export default function Footer() {
                 kyravwebstudio@gmail.com
               </a>
               <span>+91 88830 94601</span>
-              <span className="text-zinc-500 mt-1">Available Worldwide</span>
+              <span className="text-zinc-500 mt-1">Clients across India, UAE, UK & US</span>
               <div className="flex items-center gap-2 mt-2">
                 <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                 <span className="text-[11px] text-blue-400 font-medium">Open for Select Projects</span>
@@ -83,7 +83,10 @@ export default function Footer() {
 
         {/* Bottom Line */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
-          <span>© 2026 Kyrav. All rights reserved.</span>
+          <div className="flex flex-col gap-1.5">
+            <span>© 2026 KYRAV. All rights reserved. <span className="text-zinc-400">— Kaviyarasu, Founder, KYRAV</span></span>
+            <span className="text-[10px] text-zinc-600">Payments via Stripe, PayPal & Wise. Invoicing in USD, GBP, AED, EUR, INR.</span>
+          </div>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="hover:text-zinc-300 transition-colors">Privacy Policy</Link>
             <Link href="/terms-and-conditions" className="hover:text-zinc-300 transition-colors">Terms & Conditions</Link>

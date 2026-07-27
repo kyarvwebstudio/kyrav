@@ -7,35 +7,35 @@ const serviceItems = [
   {
     id: "01",
     title: "Website Design",
-    desc: "We don't start in Figma. We start by understanding what makes your business tick — your audience, your competitors, and what's actually going to move the needle online.",
+    desc: "We don't start in Figma. We start by understanding what makes your business tick — your audience, your competitors, and what's actually going to move the needle online. Result: Bespoke architecture that doesn't look like a SaaS template.",
     tech: ["UI/UX Design", "Custom Layouts", "Responsive Design", "Figma & Prototyping"],
     image: "/services/website-design.png"
   },
   {
     id: "02",
     title: "Website Redesign",
-    desc: "Your current site is slow, outdated, or just not converting. We tear it down to the studs and rebuild with modern architecture, sharp visuals, and user flows that actually make sense.",
+    desc: "Your current site is slow, outdated, or just not converting. We tear it down to the studs and rebuild with modern architecture, sharp visuals, and user flows that actually make sense. Case Study: Ashmija in Color's digital rebrand.",
     tech: ["Legacy Modernization", "Next.js Migration", "UI Revamp", "Conversion UX"],
     image: "/services/website-redesign.png"
   },
   {
     id: "03",
     title: "Annual Maintenance (AMC)",
-    desc: "Websites break. Content gets stale. Security patches pile up. We handle all of it — updates, backups, speed audits, and monitoring — so you can focus on running your business.",
+    desc: "Websites break. Content gets stale. Security patches pile up. We handle all of it — updates, backups, speed audits, and monitoring — so you can focus on running your business. Process: Proactive security patching and uptime monitoring.",
     tech: ["Security Patching", "Content Updates", "Backup & Recovery", "24/7 Monitoring"],
     image: "/services/annual-maintenance.png"
   },
   {
     id: "04",
     title: "Integration of AI",
-    desc: "We plug AI directly into your website — smart chatbots that actually help customers, automated lead scoring, content that adapts to who's reading it. No gimmicks, just tools that save you time and money.",
+    desc: "We plug AI directly into your website — smart chatbots that actually help customers, automated lead scoring, content that adapts to who's reading it. No gimmicks, just tools that save you time and money. Process: Custom OpenAI/Claude API workflows.",
     tech: ["AI Chatbots", "OpenAI & Claude API", "Workflow Automation", "Smart Personalization"],
     image: "/services/ai-integration.png"
   },
   {
     id: "05",
     title: "SEO & Performance Optimization",
-    desc: "Page 2 of Google is a graveyard. We make sure you're not there. Technical SEO, structured data, Core Web Vitals optimization — the stuff that actually gets you found.",
+    desc: "Page 2 of Google is a graveyard. We make sure you're not there. Technical SEO, structured data, Core Web Vitals optimization — the stuff that actually gets you found. Result: 100/100 Lighthouse scores and sub-second load times.",
     tech: ["Lighthouse 100", "Core Web Vitals", "JSON-LD Schema", "Technical & Local SEO"],
     image: "/services/seo-performance.png"
   }

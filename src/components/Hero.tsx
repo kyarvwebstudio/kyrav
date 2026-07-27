@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="max-w-2xl text-base sm:text-lg text-zinc-400 font-normal leading-relaxed">
-          We design custom interfaces and engineer lightweight Next.js websites directly for founders and teams worldwide. Zero agency layers — just high-speed performance and bespoke digital assets built to last.
+          We design custom interfaces and engineer lightweight Next.js websites directly for founders and teams across India, UAE, UK, and the US. Zero agency layers — just high-speed performance and bespoke digital assets built to last.
         </p>
 
         {/* Action Buttons */}
